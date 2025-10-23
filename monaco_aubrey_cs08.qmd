@@ -55,7 +55,7 @@ world_new <- world_new %>%
 3.  Use `geom_smooth(method = "lm")` to add the fitted linear model line. If you want to see the standard error on the regression, include `se = TRUE`.
 
 ```{r}
-ggplot(data = world_new, aes(x = log_gdp, y = lifeExp)) + geom_point(aes(color = continent)) + geom_smooth(method = "lm", se = TRUE, linetype = "dashed", color = "black") + labs(title = "Relationship Between Life Expectancy and Log GDP Per Capita", y = "Life Expectancy (Years)", x = "Log(GDP Per Capita)")
+ggplot(data = world_new, aes(x = log_gdp, y = lifeExp)) + geom_point(aes(color = continent)) + geom_smooth(method = "lm", se = TRUE, linetype = "dashed", color = "black") + labs(title = "Relationship Between Life Expectancy and Log GDP Per Capita", y = "Life Expectancy (Years)", x = "Log(GDP Per Capita)", color = "Continent")
 
 ggplot() + geom_sf(data = world_new, aes(fill = residuals)) + scale_fill_continuous(palette = "viridis")
 ```
