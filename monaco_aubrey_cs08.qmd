@@ -1,5 +1,6 @@
 ---
 title:  "cs08: Statistical Modeling and Reproducible Output"
+subtitle: "Linear Regression on Global Spatial Data & Creating Reproducible Examples"
 format:
   html: default
 ---
